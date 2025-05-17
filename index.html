@@ -13,8 +13,8 @@
 
       .video-embed {
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 60px;
+        left: 40px;
         width: 150px;
         aspect-ratio: 16 / 16;
         z-index: 9999;
@@ -48,7 +48,7 @@
         src="https://share.synthesia.io/embeds/videos/6da60b89-faa1-4bf6-9984-d268b3d57ac1" 
         loading="lazy" 
         title="Tour del edén campestre"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allow="accelerometer; clipboard-write; ; gyroscope; picture-in-picture" 
         allowfullscreen>
       </iframe>
     </div>
@@ -82,7 +82,7 @@
           property: "material.opacity",
           from: 0,
           to: 1,
-          dur: 1000
+          dur: 3000
         });
 
         setTimeout(() => {
@@ -90,7 +90,7 @@
           skyFade.setAttribute("visible", false);
           skyFade.removeAttribute("animation__fadein");
           createHotspots(newImg);
-        }, 2000);
+        }, 1000);
       }
 
       function createHotspots(imageName) {
